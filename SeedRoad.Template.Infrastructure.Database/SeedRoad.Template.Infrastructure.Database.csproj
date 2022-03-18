@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\common\SeedRoad.Common.Configuration\SeedRoad.Common.Configuration.csproj" />
+      <ProjectReference Include="..\common\SeedRoad.Common.Core.Application\SeedRoad.Common.Core.Application.csproj" />
+      <ProjectReference Include="..\common\SeedRoad.Common.Infrastructure\SeedRoad.Common.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.3" />
+    </ItemGroup>
+
+</Project>

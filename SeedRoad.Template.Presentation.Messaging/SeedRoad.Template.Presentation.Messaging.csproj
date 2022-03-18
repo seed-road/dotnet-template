@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\common\SeedRoad.Common.Configuration\SeedRoad.Common.Configuration.csproj" />
+      <ProjectReference Include="..\common\SeedRoad.Common.Presentation.Messaging\SeedRoad.Common.Presentation.Messaging.csproj" />
+      <ProjectReference Include="..\SeedRoad.Template.Application\SeedRoad.Template.Application.csproj" />
+    </ItemGroup>
+
+</Project>

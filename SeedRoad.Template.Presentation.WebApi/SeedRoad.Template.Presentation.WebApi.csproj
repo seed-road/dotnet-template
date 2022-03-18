@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\common\SeedRoad.Common.Authentication\SeedRoad.Common.Authentication.csproj" />
+        <ProjectReference Include="..\common\SeedRoad.Common.Presentation.WebApi\SeedRoad.Common.Presentation.WebApi.csproj" />
+        <ProjectReference Include="..\SeedRoad.Template.Application\SeedRoad.Template.Application.csproj" />
+        <ProjectReference Include="..\SeedRoad.Template.Infrastructure\SeedRoad.Template.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
