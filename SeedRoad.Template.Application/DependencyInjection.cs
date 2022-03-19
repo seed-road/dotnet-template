@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SeedRoad.Common.Core.Application;
 
-namespace SeedRoad.Template.Application.UsesCases;
+namespace SeedRoad.Template.Application;
 
 public static class DependencyInjection
 {
@@ -12,6 +12,6 @@ public static class DependencyInjection
     public static IServiceCollection AddApplication(this IServiceCollection serviceCollection,
         IConfiguration configuration)
     {
-        return serviceCollection.AddCommonApplication(Assembly);
+        return serviceCollection.AddCommonApplication(configuration, Assembly);
     }
 }

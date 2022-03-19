@@ -2,7 +2,7 @@
 using MediatR;
 using SeedRoad.Template.Domain.Templates;
 
-namespace SeedRoad.Template.Application.UsesCases;
+namespace SeedRoad.Template.Application.UsesCases.Templates.Commands;
 
 public class TemplateCreationValidator : AbstractValidator<TemplateCreation>
 {

@@ -1,14 +1,18 @@
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using SeedRoad.Common.Authentication.Extensions;
 using SeedRoad.Common.Presentation.WebApi.Extensions;
+using SeedRoad.Template.Application;
 using SeedRoad.Template.Application.UsesCases;
+using SeedRoad.Template.Application.UsesCases.Templates;
 using SeedRoad.Template.Infrastructure;
 
 
 const string corsPolicy = "AllowClient";
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
+
 // Add services to the container.
+builder.Services.AddResponseBuilder();
 builder.Services.AddCommonHttpErrorService(builder.Environment.IsDevelopment());
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddApplication(builder.Configuration);

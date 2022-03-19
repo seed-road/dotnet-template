@@ -3,6 +3,8 @@ using Microsoft.Extensions.DependencyInjection;
 using SeedRoad.Common.Configuration;
 using SeedRoad.Common.Presentation.Messaging.Extensions;
 using SeedRoad.Template.Application.UsesCases;
+using SeedRoad.Template.Application.UsesCases.Templates;
+using SeedRoad.Template.Application.UsesCases.Templates.Commands;
 using SeedRoad.Template.Presentation.Messaging.Configurations;
 
 namespace SeedRoad.Template.Presentation.Messaging;
