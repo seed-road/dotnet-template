@@ -12,21 +12,115 @@
     "language": "C#",
     "type": "solution"
   },
+  "sources": [
+    {
+      "exclude": [
+        ".git/**/*",
+        ".git",
+        ".gitmodules",
+        "**/bin/**/*",
+        "**/obj/**/*",
+        ".idea/**/*",
+        ".template.config/**/*",
+        "*.DotSettings*",
+        "common/**/*",
+        "README.md"
+      ]
+    }
+  ],
+  "preferNameDirectory": true,
+  "sourceName": "SeedRoad.Template",
   "symbols": {
-    "boundedContext": {
+    "httpPort": {
       "type": "generated",
-      "generator": "regex",
-      "dataType": "string",
-      "replaces": "Your bounded context name",
+      "generator": "port",
       "parameters": {
-        "source": "boundedContext",
-        "steps": [
+        "fallback": 5000
+      },
+      "replaces": "5000"
+    },
+    "httpsPort": {
+      "type": "generated",
+      "generator": "port",
+      "parameters": {
+        "fallback": 5001
+      },
+      "replaces": "5001"
+    },
+    "aggregate": {
+      "type": "parameter",
+      "datatype": "text",
+      "isRequired": true,
+      "defaultValue": "Template",
+      "replaces": "Template",
+      "fileRename": "Template"
+    },
+    "aggregateHead": {
+      "type": "derived",
+      "valueSource": "aggregate",
+      "valueTransform": "lowerCaseFirstLetter"
+    },
+    "aggregateTail": {
+      "type": "derived",
+      "valueSource": "aggregate",
+      "valueTransform": "afterFirstLetter"
+    },
+    "aggregateCamelCase": {
+      "type": "generated",
+      "generator": "join",
+      "replaces": "template",
+      "parameters": {
+        "symbols": [
           {
-            "regex": "template",
-            "replacement": "[Replaced]"
+            "type": "ref",
+            "value": "aggregateHead"
+          },
+          {
+            "type": "ref",
+            "value": "aggregateTail"
           }
         ]
       }
     }
-  }
+  },
+  "forms": {
+    "lowerCaseFirstLetter": {
+      "identifier": "chain",
+      "steps": [
+        "firstLetter",
+        "lowerCase"
+      ]
+    },
+    "firstLetter": {
+      "identifier": "replace",
+      "pattern": "^(.)(.*)",
+      "replacement": "$1"
+    },
+    "afterFirstLetter": {
+      "identifier": "replace",
+      "pattern": "^(.)(.*)",
+      "replacement": "$2"
+    },
+    "lowerCase": {
+      "identifier": "lowerCase"
+    }
+  },
+  "postActions": [
+    {
+      "actionId": "3A7C4B45-1F5D-4A30-959A-51B88E82B5D2",
+      "args": {
+        "executable": "/bin/bash",
+        "args": "init.sh",
+        "redirectStandardOutput": true,
+        "redirectStandardError": true
+      },
+      "manualInstructions": [
+        {
+          "text": "Run 'init.sh'"
+        }
+      ],
+      "continueOnError": true,
+      "description ": "Setup git and certificates by running init.sh"
+    }
+  ]
 }

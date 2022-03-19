@@ -6,7 +6,7 @@ using SeedRoad.Template.Application.UsesCases;
 using SeedRoad.Template.Application.UsesCases.Templates;
 using SeedRoad.Template.Infrastructure;
 
-
+const string test = "Template";
 const string corsPolicy = "AllowClient";
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
