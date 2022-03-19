@@ -1,0 +1,32 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "sbailleul",
+  "classifications": [
+    "Web",
+    "WebAPI"
+  ],
+  "identity": "SeedRoad.Template",
+  "name": "Base template for seed-road microservices",
+  "shortName": "seed-road",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "symbols": {
+    "boundedContext": {
+      "type": "generated",
+      "generator": "regex",
+      "dataType": "string",
+      "replaces": "Your bounded context name",
+      "parameters": {
+        "source": "boundedContext",
+        "steps": [
+          {
+            "regex": "template",
+            "replacement": "[Replaced]"
+          }
+        ]
+      }
+    }
+  }
+}
