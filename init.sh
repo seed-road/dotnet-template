@@ -3,8 +3,10 @@ current_directory=$(pwd)
 project_name=$(basename "$current_directory")
 mv TmpREADME.md README.md
 if [[ "$OSTYPE" == "darwin"* ]]; then
+  echo "Use bsd sed"
   sed -i '' "s/project_placeholder/$project_name/g" README.md
 else
+  echo "Use gnu sed"
   sed -i "s/project_placeholder/$project_name/g" README.md  
 fi
 echo "Create https certificate located at :  ${HOME}/.aspnet/https/$project_name.pfx"
