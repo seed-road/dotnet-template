@@ -17,12 +17,12 @@ builder.Services.AddCommonHttpErrorService(builder.Environment.IsDevelopment());
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddApplication(builder.Configuration);
 builder.Services.AddCommonCors(corsPolicy, "http://allowed-client.io");
-IApiVersionDescriptionProvider versioning = builder.Services.AddCommonVersioning(majorVersion: 1);
+builder.Services.AddCommonVersioning(majorVersion: 1);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddCommonSwagger(versioning, "Template", "Seed-road template project");
+builder.Services.AddCommonSwagger("Template", "Seed-road template project");
 builder.Services.AddCommonAuthentication();
 builder.Services.AddCommonAuthorization();
 WebApplication app = builder.Build();

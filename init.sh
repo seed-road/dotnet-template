@@ -2,7 +2,11 @@
 current_directory=$(pwd)
 project_name=$(basename "$current_directory")
 mv TmpREADME.md README.md
-sed -i "s/project_placeholder/$project_name/g" README.md
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  sed -i '' "s/project_placeholder/$project_name/g" README.md
+else
+  sed -i "s/project_placeholder/$project_name/g" README.md  
+fi
 echo "Create https certificate located at :  ${HOME}/.aspnet/https/$project_name.pfx"
 dotnet dev-certs https -ep "${HOME}/.aspnet/https/$project_name.pfx" -p "$project_name.pwd"
 dotnet dev-certs https --trust
