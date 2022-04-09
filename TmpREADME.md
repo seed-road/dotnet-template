@@ -1,5 +1,5 @@
-﻿#Template project
-##DockerCompose
+﻿# Template project
+## DockerCompose
 Service configuration example to add to environment docker/docker-compose.yaml : 
 ````yaml
  project_placeholder:
@@ -29,7 +29,7 @@ Service configuration example to add to environment docker/docker-compose.yaml :
     volumes:
       - ~/.aspnet/https:/https:ro
 ````
-##Docker
+## Docker
 Build command : ``docker build . -t seed-road/project_placeholder``  
 Run command : 
 ````

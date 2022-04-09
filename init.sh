@@ -25,4 +25,3 @@ echo "Push first commit to GitHub repository"
 git push -u origin main
 echo "Remove this script from template"
 rm init.sh
-
