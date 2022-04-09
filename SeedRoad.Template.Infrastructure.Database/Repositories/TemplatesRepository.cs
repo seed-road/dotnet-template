@@ -13,7 +13,7 @@ public class TemplatesRepository : ITemplates
 
     public Task<TemplateReadDto?> FindByIdAsync(Guid id)
     {
-        return new TemplateReadDto(id, "test").ToTask();
+        return new TemplateReadDto(id, "test").ToTask() as Task<TemplateReadDto?>;
     }
 
     public Task RemoveAsync(Guid id)
