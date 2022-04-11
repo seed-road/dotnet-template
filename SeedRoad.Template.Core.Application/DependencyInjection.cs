@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SeedRoad.Common.Core.Application;
 
-namespace SeedRoad.Template.Application;
+namespace SeedRoad.Template.Core.Application;
 
 public static class DependencyInjection
 {

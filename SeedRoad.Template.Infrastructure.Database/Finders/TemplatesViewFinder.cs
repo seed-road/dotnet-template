@@ -2,8 +2,8 @@
 using SeedRoad.Common.Core.Application.Extensions;
 using SeedRoad.Common.Core.Application.Pagination;
 using SeedRoad.Common.System;
-using SeedRoad.Template.Application.UsesCases.Templates;
-using SeedRoad.Template.Application.UsesCases.Templates.Queries;
+using SeedRoad.Template.Core.Application.UsesCases.Templates;
+using SeedRoad.Template.Core.Application.UsesCases.Templates.Queries;
 
 namespace SeedRoad.Template.Infrastructure.Database.Finders;
 

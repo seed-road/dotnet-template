@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using SeedRoad.Common.Core.Domain.Exceptions;
 
-namespace SeedRoad.Template.Application.UsesCases.Templates.Queries;
+namespace SeedRoad.Template.Core.Application.UsesCases.Templates.Queries;
 
 public record GetTemplateByIdQuery(Guid Id) : IRequest<TemplateView>;
 

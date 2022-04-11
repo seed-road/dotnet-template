@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SeedRoad.Common.Core.Application;
 using SeedRoad.Common.Core.Application.Events;
-using SeedRoad.Template.Application.UsesCases.Templates.Queries;
+using SeedRoad.Template.Core.Application.UsesCases.Templates.Queries;
 using SeedRoad.Template.Domain.Templates;
 using SeedRoad.Template.Infrastructure.Database.Contexts;
 using SeedRoad.Template.Infrastructure.Database.Finders;

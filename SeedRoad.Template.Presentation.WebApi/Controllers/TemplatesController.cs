@@ -6,10 +6,10 @@ using SeedRoad.Common.Presentation.WebApi.Contracts;
 using SeedRoad.Common.Presentation.WebApi.DTOs;
 using SeedRoad.Common.Presentation.WebApi.Extensions;
 using SeedRoad.Common.Presentation.WebApi.Services;
-using SeedRoad.Template.Application.UsesCases;
-using SeedRoad.Template.Application.UsesCases.Templates;
-using SeedRoad.Template.Application.UsesCases.Templates.Commands;
-using SeedRoad.Template.Application.UsesCases.Templates.Queries;
+using SeedRoad.Template.Core.Application.UsesCases;
+using SeedRoad.Template.Core.Application.UsesCases.Templates;
+using SeedRoad.Template.Core.Application.UsesCases.Templates.Commands;
+using SeedRoad.Template.Core.Application.UsesCases.Templates.Queries;
 
 namespace SeedRoad.Template.Presentation.WebApi.Controllers;
 

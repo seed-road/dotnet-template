@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using SeedRoad.Common.Authentication.Extensions;
 using SeedRoad.Common.Presentation.WebApi.Extensions;
-using SeedRoad.Template.Application;
-using SeedRoad.Template.Application.UsesCases;
-using SeedRoad.Template.Application.UsesCases.Templates;
+using SeedRoad.Template.Core.Application;
+using SeedRoad.Template.Core.Application.UsesCases;
+using SeedRoad.Template.Core.Application.UsesCases.Templates;
 using SeedRoad.Template.Infrastructure;
 
 const string test = "Template";

@@ -16,7 +16,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\SeedRoad.Template.Domain\SeedRoad.Template.Domain.csproj" />
+      <ProjectReference Include="..\SeedRoad.Template.Core.Domain\SeedRoad.Template.Core.Domain.csproj" />
     </ItemGroup>
 
 </Project>

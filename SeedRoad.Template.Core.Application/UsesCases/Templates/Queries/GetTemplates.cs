@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using SeedRoad.Common.Core.Application.Pagination;
 
-namespace SeedRoad.Template.Application.UsesCases.Templates.Queries;
+namespace SeedRoad.Template.Core.Application.UsesCases.Templates.Queries;
 
 public record GetTemplatesQuery : PaginationQueryBase<IPagedList<TemplateView>>;
 public class GetTemplates: IRequestHandler<GetTemplatesQuery, IPagedList<TemplateView>>

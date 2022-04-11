@@ -26,9 +26,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedRoad.Common.Presentatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedRoad.Common.System", "common\SeedRoad.Common.System\SeedRoad.Common.System.csproj", "{4C4260F7-3E85-4C91-87D0-7191A2205B85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedRoad.Template.Application", "SeedRoad.Template.Application\SeedRoad.Template.Application.csproj", "{43D2D8E4-DA83-4078-93B8-5F1B6B273C1B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedRoad.Template.Core.Application", "SeedRoad.Template.Core.Application\SeedRoad.Template.Core.Application.csproj", "{43D2D8E4-DA83-4078-93B8-5F1B6B273C1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedRoad.Template.Domain", "SeedRoad.Template.Domain\SeedRoad.Template.Domain.csproj", "{2BBCBAAC-7A56-4A7A-A79D-73096A70566D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedRoad.Template.Core.Domain", "SeedRoad.Template.Core.Domain\SeedRoad.Template.Core.Domain.csproj", "{2BBCBAAC-7A56-4A7A-A79D-73096A70566D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedRoad.Template.Infrastructure", "SeedRoad.Template.Infrastructure\SeedRoad.Template.Infrastructure.csproj", "{9B7BDD3B-04AD-462D-88B6-A790483B5C7A}"
 EndProject

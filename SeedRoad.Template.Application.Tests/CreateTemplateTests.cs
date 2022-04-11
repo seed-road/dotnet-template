@@ -2,9 +2,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using Moq;
 using NUnit.Framework;
-using SeedRoad.Template.Application.UsesCases;
-using SeedRoad.Template.Application.UsesCases.Templates;
-using SeedRoad.Template.Application.UsesCases.Templates.Commands;
+using SeedRoad.Template.Core.Application.UsesCases;
+using SeedRoad.Template.Core.Application.UsesCases.Templates;
+using SeedRoad.Template.Core.Application.UsesCases.Templates.Commands;
 using SeedRoad.Template.Domain.Templates;
 using SeedRoad.Template.Domain.Templates.DTOs;
 

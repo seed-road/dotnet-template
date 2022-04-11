@@ -9,7 +9,7 @@
     <ItemGroup>
       <ProjectReference Include="..\common\SeedRoad.Common.Configuration\SeedRoad.Common.Configuration.csproj" />
       <ProjectReference Include="..\common\SeedRoad.Common.Presentation.Messaging\SeedRoad.Common.Presentation.Messaging.csproj" />
-      <ProjectReference Include="..\SeedRoad.Template.Application\SeedRoad.Template.Application.csproj" />
+      <ProjectReference Include="..\SeedRoad.Template.Core.Application\SeedRoad.Template.Core.Application.csproj" />
     </ItemGroup>
 
 </Project>

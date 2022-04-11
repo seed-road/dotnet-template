@@ -10,8 +10,8 @@
       <ProjectReference Include="..\common\SeedRoad.Common.Configuration\SeedRoad.Common.Configuration.csproj" />
       <ProjectReference Include="..\common\SeedRoad.Common.Core.Application\SeedRoad.Common.Core.Application.csproj" />
       <ProjectReference Include="..\common\SeedRoad.Common.Infrastructure\SeedRoad.Common.Infrastructure.csproj" />
-      <ProjectReference Include="..\SeedRoad.Template.Application\SeedRoad.Template.Application.csproj" />
-      <ProjectReference Include="..\SeedRoad.Template.Domain\SeedRoad.Template.Domain.csproj" />
+      <ProjectReference Include="..\SeedRoad.Template.Core.Application\SeedRoad.Template.Core.Application.csproj" />
+      <ProjectReference Include="..\SeedRoad.Template.Core.Domain\SeedRoad.Template.Core.Domain.csproj" />
     </ItemGroup>
 
     <ItemGroup>
