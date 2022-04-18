@@ -19,7 +19,7 @@ builder.Services.AddApplication(builder.Configuration);
 builder.Services.AddCommonCors(corsPolicy, "http://allowed-client.io");
 builder.Services.AddCommonVersioning(majorVersion: 1);
 
-builder.Services.AddControllers();
+builder.Services.AddCommonControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddCommonSwagger("Template", "Seed-road template project");
