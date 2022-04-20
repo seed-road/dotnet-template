@@ -19,6 +19,7 @@ git commit -m "first commit"./
 git branch -M main
 echo "Add common submodule : https://github.com/seed-road/common.git"
 git submodule add https://github.com/seed-road/common.git
+git submodule update --init --recursive
 echo "Set remote GitHub repository : https://github.com/seed-road/$project_name.git"
 git remote add origin "https://github.com/seed-road/$project_name.git"
 echo "Push first commit to GitHub repository"
