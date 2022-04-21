@@ -30,7 +30,7 @@ public class TemplatesController : ApiControllerBase
     public async Task<IActionResult> CreateTemplate(CreateTemplateDto dto)
     {
         Guid templateId = await _sender.Send(new TemplateCreation(dto.ExampleProperty));
-        return CreatedAtAction(nameof(GetTemplate), new { templateId }, null);
+        return CreatedAtAction(nameof(GetTemplate), new {templateId}, null);
     }
 
     [HttpGet("{templateId:guid}", Name = nameof(GetTemplate))]
@@ -40,12 +40,12 @@ public class TemplatesController : ApiControllerBase
         return Ok(_builder.ToEntityResponse(templateView, GetLinksForTemplate(templateId)));
     }
 
-    public record GetTemplatesDto() : PaginationQueryDtoBase;
+    public record GetTemplatesDto() : PaginationRequestBase;
 
     [HttpGet(Name = nameof(GetTemplates))]
     public async Task<IActionResult> GetTemplates([FromQuery] GetTemplatesDto dto)
     {
-        var templateViews = await _sender.Send(new GetTemplatesQuery() { Page = dto.Page, Size = dto.Size });
+        var templateViews = await _sender.Send(new GetTemplatesQuery() {Page = dto.Page, Size = dto.Size});
         var templateViewsWithLinks =
             templateViews.Select(view => _builder.ToEntityResponse(view, GetLinksForTemplate(view.Id)));
         return Ok(_builder.FromPagedList(Url, templateViews.ToPagedListResume(), templateViewsWithLinks,
@@ -56,7 +56,7 @@ public class TemplatesController : ApiControllerBase
     {
         return new[]
         {
-            LinkDto.SelfLink(Url.Link(nameof(GetTemplate), new { templateId })),
+            LinkDto.SelfLink(Url.Link(nameof(GetTemplate), new {templateId})),
             LinkDto.AllLink(Url.Link(nameof(GetTemplates), null)),
         };
     }

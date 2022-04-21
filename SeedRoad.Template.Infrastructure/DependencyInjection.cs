@@ -11,7 +11,7 @@ public static class DependencyInjection
         IConfiguration configuration)
     {
         return serviceCollection
-            .InjectDatabase(configuration)
-            .InjectMessaging(configuration);
+            .AddStorage(configuration)
+            .AddMessaging(configuration);
     }
 }

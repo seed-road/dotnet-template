@@ -9,7 +9,7 @@
     <ItemGroup>
       <ProjectReference Include="..\common\SeedRoad.Common.Configuration\SeedRoad.Common.Configuration.csproj" />
       <ProjectReference Include="..\common\SeedRoad.Common.Core.Application\SeedRoad.Common.Core.Application.csproj" />
-      <ProjectReference Include="..\SeedRoad.Template.Infrastructure.Database\SeedRoad.Template.Infrastructure.Database.csproj" />
+      <ProjectReference Include="..\SeedRoad.Template.Infrastructure.Storage\SeedRoad.Template.Infrastructure.Storage.csproj" />
       <ProjectReference Include="..\SeedRoad.Template.Infrastructure.Messaging\SeedRoad.Template.Infrastructure.Messaging.csproj" />
     </ItemGroup>
 

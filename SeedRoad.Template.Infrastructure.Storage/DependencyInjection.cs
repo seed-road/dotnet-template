@@ -15,7 +15,7 @@ public static class DependencyInjection
 {
     public static Assembly Assembly => Assembly.GetExecutingAssembly();
 
-    public static IServiceCollection InjectDatabase(this IServiceCollection serviceCollection,
+    public static IServiceCollection AddStorage(this IServiceCollection serviceCollection,
         IConfiguration configuration)
     {
         Type interceptorType = typeof(EventPublisherInterceptor);

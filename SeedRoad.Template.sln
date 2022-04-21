@@ -32,7 +32,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedRoad.Template.Core.Doma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedRoad.Template.Infrastructure", "SeedRoad.Template.Infrastructure\SeedRoad.Template.Infrastructure.csproj", "{9B7BDD3B-04AD-462D-88B6-A790483B5C7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedRoad.Template.Infrastructure.Database", "SeedRoad.Template.Infrastructure.Database\SeedRoad.Template.Infrastructure.Database.csproj", "{645B77B0-608D-49BE-9E5C-0DAA3B3AAA51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedRoad.Template.Infrastructure.Storage", "SeedRoad.Template.Infrastructure.Storage\SeedRoad.Template.Infrastructure.Storage.csproj", "{645B77B0-608D-49BE-9E5C-0DAA3B3AAA51}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedRoad.Template.Infrastructure.Messaging", "SeedRoad.Template.Infrastructure.Messaging\SeedRoad.Template.Infrastructure.Messaging.csproj", "{041F5162-C654-46B2-A82A-74094CCDC422}"
 EndProject

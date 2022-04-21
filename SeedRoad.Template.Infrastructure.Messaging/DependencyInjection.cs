@@ -12,7 +12,7 @@ public static class DependencyInjection
 {
     public static Assembly Assembly => Assembly.GetExecutingAssembly();
 
-    public static IServiceCollection InjectMessaging(this IServiceCollection serviceCollection,
+    public static IServiceCollection AddMessaging(this IServiceCollection serviceCollection,
         IConfiguration configuration)
     {
         var rabbitMqConfig = configuration.GetRequiredConfiguration<RabbitMqConfiguration>();
