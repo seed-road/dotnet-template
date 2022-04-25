@@ -16,6 +16,14 @@ public class TemplatesRepository : ITemplates
         return new TemplateReadDto(id, "test").ToTask() as Task<TemplateReadDto?>;
     }
 
+    public async Task<IEnumerable<TemplateReadDto>> GetAllAsync()
+    {
+        return await new List<TemplateReadDto>()
+        {
+            new(Guid.NewGuid(), "test")
+        }.ToTask();
+    }
+
     public Task RemoveAsync(TemplateWriteDto aggregate)
     {
         return Task.CompletedTask;

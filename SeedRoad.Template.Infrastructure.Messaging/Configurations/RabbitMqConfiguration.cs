@@ -7,5 +7,5 @@ public class RabbitMqConfiguration : Common.Messaging.Configurations.RabbitMqCon
     public TemplateExchange TemplateExchange { get; set; }
 
     public RoutingConfiguration OutTemplateActionRouting =>
-        new RoutingConfiguration(TemplateExchange.Name, TemplateExchange.OutTemplateActionRoutingKey);
+        new RoutingConfiguration(TemplateExchange.OutTemplateActionRoutingKey, TemplateExchange.Name);
 }
