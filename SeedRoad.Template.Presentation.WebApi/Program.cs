@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using SeedRoad.Common.Authentication.Configuration;
 using SeedRoad.Common.Authentication.Extensions;
+using SeedRoad.Common.Configuration;
 using SeedRoad.Common.Presentation.WebApi.Extensions;
 using SeedRoad.Template.Core.Application;
 using SeedRoad.Template.Core.Application.UsesCases;
@@ -23,7 +25,8 @@ builder.Services.AddCommonControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddCommonSwagger("Template", "Seed-road template project");
-builder.Services.AddCommonAuthentication();
+var authConfiguration = builder.Configuration.GetRequiredConfiguration<AuthConfiguration>();
+builder.Services.AddCommonAuthentication(authConfiguration);
 builder.Services.AddCommonAuthorization();
 WebApplication app = builder.Build();
 app.UseCommonExceptionHandler();
@@ -36,6 +39,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

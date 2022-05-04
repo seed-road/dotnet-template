@@ -16,14 +16,14 @@ Service configuration example to add to environment docker/docker-compose.yaml :
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_Kestrel__Certificates__Default__Path: "/https/project_placeholder.pfx"
       ASPNETCORE_Kestrel__Certificates__Default__Password: "project_placeholder.pwd"
-      ConnectionString:TemplateDb: "Server=127.0.0.1,1433;Database=template;User Id=sa;Password=pwd;"
-      RabbitMqConfiguration:Host: "seed-road-rabbitmq"
-      RabbitMqConfiguration:Port: 15672
-      RabbitMqConfiguration:Password: "lapin"
-      RabbitMqConfiguration:Username: "lapin"
-      RabbitMqConfiguration:TemplateExchange:Name: "app.templates"
-      RabbitMqConfiguration:TemplateExchange:OutTemplateActionRouting: "out.action"
-      RabbitMqConfiguration:TemplateExchange:InTemplateActionRouting: "in.action"
+      ConnectionStrings__TemplateDb: "Server=127.0.0.1,1433;Database=template;User Id=sa;Password=pwd;"
+      RabbitMqConfiguration__Host: "seed-road-rabbitmq"
+      RabbitMqConfiguration__Port: 15672
+      RabbitMqConfiguration__Password: "lapin"
+      RabbitMqConfiguration__Username: "lapin"
+      RabbitMqConfiguration__TemplateExchange:Name: "app.templates"
+      RabbitMqConfiguration__TemplateExchange:OutTemplateActionRouting: "out.action"
+      RabbitMqConfiguration__TemplateExchange:InTemplateActionRouting: "in.action"
     networks:
       - seed-road-network
     volumes:
