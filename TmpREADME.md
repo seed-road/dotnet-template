@@ -19,8 +19,8 @@ Service configuration example to add to environment docker/docker-compose.yaml :
       ConnectionStrings__TemplateDb: "Server=127.0.0.1,1433;Database=template;User Id=sa;Password=pwd;"
       RabbitMqConfiguration__Host: "seed-road-rabbitmq"
       RabbitMqConfiguration__Port: 15672
-      RabbitMqConfiguration__Password: "lapin"
-      RabbitMqConfiguration__Username: "lapin"
+      RabbitMqConfiguration__Password: "guest"
+      RabbitMqConfiguration__Username: "guest"
       RabbitMqConfiguration__TemplateExchange:Name: "app.templates"
       RabbitMqConfiguration__TemplateExchange:OutTemplateActionRouting: "out.action"
       RabbitMqConfiguration__TemplateExchange:InTemplateActionRouting: "in.action"
